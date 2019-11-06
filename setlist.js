@@ -1,6 +1,7 @@
 var arr = [];
 var hasSwitched = false;
 
+// initializes the "Song" array
 $.getJSON( "setlist.json", function( data ) {
     $.each( data, function(k, v) {
         var info = [];
@@ -13,6 +14,7 @@ $.getJSON( "setlist.json", function( data ) {
 
 });
 
+// a constructor of Song
 function Song(info){
     this.songname = info[0];
     this.artist = info[1];
@@ -20,15 +22,18 @@ function Song(info){
     this.year = info[3];
 }
 
+
 $(document).ready (
 	function(){
         display();
     }
 );
 
+// dynamically creates li and ul elements
 var li = $('<li/>').appendTo('#menu');
 var sub_ul = $('<ul/>').appendTo(li);
 
+// called automatically
 function display(){
     $("#menu li ul").attr('id', 'list');
     $.each(arr, function (key, value) {
@@ -38,8 +43,7 @@ function display(){
     });   
 }
 
-
-
+// called based on user's requests
 function onlyDisplay(){
     var newLi = $('<li/>');
     newLi.attr('id', 'list');
@@ -48,16 +52,18 @@ function onlyDisplay(){
     $.each(arr, function (key, value) {
         var thisList = document.getElementById("whichGenre");
         var thisGenre = thisList.options[thisList.selectedIndex].value;
+        // if the song matches the genre that the user wishes to display
         if (arr[key].genre == thisGenre){
             var sub_li = $('<li/>').html(arr[key].songname+'<br/>'+"Artist: " + arr[key].artist
                                         +'<br/>'+"Genre: "+arr[key].genre+'<br/>'+"Released:  "+ arr[key].year);
             sub_ul2.append(sub_li);
         }
     });
+    // replaces the elements with an old one
     $('#list').replaceWith(newLi);
-    //needs to replace sub_ul2 with a new one
 }
 
+// called when the user clicks the submit button
 $(document).on('submit', '#dropdown', function(event) {
     event.preventDefault();
     onlyDisplay();
