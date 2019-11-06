@@ -1,0 +1,106 @@
+html{
+    background-color: #000;
+    color: #fff;
+}
+
+ul{
+    margin-left: 300px;
+    list-style: none;
+    width: 80%;
+    color: #fff;
+}
+
+body{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#twolists{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+#list{
+    list-style: none;
+    width: 100%;
+}
+
+li{
+    font-size: 25px;
+    font-family: arial, Helvetica, sans-serif;
+    line-height: 50px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+li:hover{
+    transition: font-size 1s;
+    font-size: 30px;
+}
+
+#button{
+    text-decoration: none;
+    border:1px solid #fff;
+    color: #fff;
+    background-color: #000;
+    width: 100px;
+    font-size: 15px;
+    padding: 5px;
+    position: fixed;
+    top: 394px;
+    margin-left: 280px;
+    border-radius: 4px;
+}
+
+#button:hover{
+    transition: all 0.5s;
+    width: 120px;
+}
+
+
+#whichGenre{
+    text-decoration: none;
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    position: fixed;
+    margin-top: 294px;
+    width: 100px;
+    font-size: 12px;
+    height: 30px;
+    margin-left: 150px;
+
+}
+
+h1{
+    position: fixed;
+    width: 150px;
+    top: 70px;
+    margin-left: 150px;
+    font-size: 50px;
+    border: 2px solid #fff;
+    padding: 40px;
+    transition-timing-function: ease-out;
+    letter-spacing: -2px;
+    transition: padding 1s;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif
+}
+
+h1:hover{
+    transition: padding 2s;
+    padding: 70px;
+    background: #fff;
+    color: #000;
+}
+
+#filter{
+    position: fixed;
+    margin-top: 300px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+

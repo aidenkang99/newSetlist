@@ -1,0 +1,62 @@
+[
+    {
+        "songname": "Paris in the Rain",
+        "artist": "Lauv",
+        "genre": "Pop",
+        "year": 2018
+    },
+    {
+        "songname": "How Do You Sleep?",
+        "artist": "Sam Smith",
+        "genre": "Pop",
+        "year": 2019
+    },
+    {
+        "songname": "Baby Don't Stop",
+        "artist": "NCT U",
+        "genre": "K-pop",
+        "year": 2018
+    },
+    {
+        "songname": "Close To You",
+        "artist": "Carpenters",
+        "genre": "Pop",
+        "year": 1970
+    },
+    {
+        "songname": "Remedy",
+        "artist": "Adele",
+        "genre": "Pop",
+        "year": 2015
+    },
+    {
+        "songname": "Bad Boy",
+        "artist": "Red Velvet",
+        "genre": "K-pop",
+        "year": 2018
+    },
+    {
+        "songname": "I'm Coming Out",
+        "artist": "Diana Ross",
+        "genre": "Disco",
+        "year": 1980
+    },
+    {
+        "songname": "Seattle",
+        "artist": "Sam Kim",
+        "genre": "K-pop",
+        "year": 2016
+    },
+    {
+        "songname": "When October Goes",
+        "artist": "Inger Gundersen",
+        "genre": "Pop",
+        "year": 2018
+    },
+    {
+        "songname": "Bidin' My Time",
+        "artist": "Julie London",
+        "genre": "Pop",
+        "year": 1968
+    }
+]
